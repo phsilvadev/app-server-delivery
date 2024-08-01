@@ -6,12 +6,11 @@ public class UserBaseDto {
 
     private int id;
     
-    private String name; // Removido @NotEmpty para tornar o campo opcional
+    private String name; 
 
     @Email(message = "Email deve ser válido")
-    private String email; // Removido @NotEmpty para tornar o campo opcional
-
-    private String password; // Removido @NotEmpty para tornar o campo opcional
+    private String email; 
+    private String password; 
 
     public void setId(int id){
         this.id = id;
